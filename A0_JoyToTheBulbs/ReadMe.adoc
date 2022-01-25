@@ -1,0 +1,51 @@
+:Author: Alice Norman
+:Email: alice.norman@ucalgary.ca | alice.norman.id@gmail.com
+:Date: 24/01/2022
+:License: Public Domain
+
+= Project: Joy to the World 
+
+  Turns single LED bulbs on (arranged in a cross) according to the direction that a joystick is moved in.
+  Turns ALL 4 LEDs on if button is clicked.
+
+== References used:
+  
+  1. Learning how joystick works, how to hook it up to Arduino:
+  https://exploreembedded.com/wiki/Analog_JoyStick_with_Arduino
+  
+  2. Learning how to print out values (imperative for testing) to "serial monitor", and how to set joystick variables:
+  https://create.arduino.cc/projecthub/MisterBotBreak/how-to-use-a-joystick-with-serial-monitor-1f04f0
+  
+  3. Learning how to view printed values (TL;DR click the 'Monitor' button in Arduino IDE):
+  https://www.programmingelectronics.com/using-the-print-function-with-arduino-part-1/
+  
+  4. Learning how to set LED pin values, setting them up for output, and turning them on:
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button
+  
+  
+== INFO
+
+  ~~ How I got the joystick values ~~
+  To determine the following range values, I played around with the joystick first
+  Used the print statements below to see what the joystick values were in each direction
+  "Up direction" is pointing towards the joystick's connection pins (arbitrary choice)
+  
+  ~~ Print statements I used for testing: ~~
+  Serial.print(xValue);
+  Serial.print("\t");
+  Serial.println(yValue);
+  Serial.println(button_state);
+
+
+== Assembly
+
+  Please see https://www.notion.so/alicenorman/Project-0-Joy-to-the-Bulbs-5c0e0072d9db42d88a0b8b0d0892c978 for schematic and photos.
+
+
+=== Contributing
+To contribute to this project please contact alicenorman https://id.arduino.cc/alicenorman
+
+=== Help
+This document is written in the _AsciiDoc_ format, a markup language to describe documents.
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
